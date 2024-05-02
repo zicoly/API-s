@@ -1,0 +1,23 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-scss", "stylelint-csstree-validator"],
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["tailwind"]
+      }
+    ],
+    "scss/at-rule-no-unknown": true,
+    "csstree/validator": true
+  },
+  "ignoreFiles": [
+    "build/**",
+    "dist/**",
+    "**/reset*.css",
+    "**/output*.css",
+    "**/bootstrap*.css",
+    "**/*.js",
+    "**/*.jsx"
+  ]
+}
